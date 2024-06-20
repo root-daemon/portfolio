@@ -1,10 +1,20 @@
 "use client";
-import { motion } from "framer-motion";
 import { HeroHighlight, Highlight } from "@/components/ui/hero-highlight";
+import { motion } from "framer-motion";
+import { WobbleCard } from "@/components/ui/wobble-card";
 
 const Hero = () => {
   return (
     <HeroHighlight>
+      <WobbleCard containerClassName="col-span-1 lg:col-span-3 bg-blue-900 min-h-[500px] lg:min-h-[600px] xl:min-h-[300px]">
+        <div className="max-w-sm">
+          <img
+            className="h-full w-full object-cover"
+            src="/images/me.png"
+            alt="hero"
+          />
+        </div>
+      </WobbleCard>
       <motion.h1
         initial={{
           opacity: 0,
@@ -20,10 +30,9 @@ const Hero = () => {
         }}
         className="mx-auto max-w-4xl px-4 text-center text-2xl font-bold leading-relaxed text-neutral-700 dark:text-white md:text-4xl lg:text-5xl lg:leading-snug"
       >
-        With insomnia, nothing&apos;s real. Everything is far away. Everything
-        is a{" "}
+        I&apos;m Vishal <br />
         <Highlight className="text-black dark:text-white">
-          copy, of a copy, of a copy.
+          A full stack developer
         </Highlight>
       </motion.h1>
     </HeroHighlight>
