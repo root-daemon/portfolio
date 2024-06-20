@@ -12,20 +12,7 @@ import RecentProjects from "@/components/RecentProjects";
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
 
 const Home = () => {
-  return (
-    <main className="relative mx-auto flex flex-col items-center justify-center overflow-hidden bg-black px-5 sm:px-10">
-      <div className="w-full max-w-7xl">
-        <FloatingNav navItems={navItems} />
-        <Hero />
-        {/* <Grid /> */}
-        {/* <RecentProjects /> */}
-        {/* <Clients /> */}
-        {/* <Experience /> */}
-        {/* <Approach /> */}
-        <Footer />
-      </div>
-    </main>
-  );
+  return <Hero />;
 };
 
 export default Home;
